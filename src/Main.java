@@ -36,7 +36,7 @@ public class Main {
         salary[2] = 90_000;
         salary[3] = 150_000;
         salary[4] = 300_000;
-        int sumSalary = 0;
+        float sumSalary = 0;
         for (int i = 0; i < salary.length; i++) {
             sumSalary = sumSalary + salary[i];
         }
@@ -44,16 +44,8 @@ public class Main {
         System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
 
         System.out.println("Task 4");
-        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = 0; i < reverseFullName.length / 2; i++) {
-            int leftIndex = i;
-            int rightIndex = reverseFullName.length - i - 1;
-
-            char temp = reverseFullName[leftIndex];
-            reverseFullName[leftIndex] = reverseFullName[rightIndex];
-            reverseFullName[rightIndex] = temp;
-        }
-        for (int i = 0; i < reverseFullName.length; i++) {
+        char[] reverseFullName = {' ', 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i > 0; i--) {
             System.out.print(reverseFullName[i]);
         }
     }
